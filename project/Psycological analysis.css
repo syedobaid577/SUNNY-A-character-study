@@ -1,0 +1,301 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+nav{
+    background-color: black;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav h1{
+    margin:150px;
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+    right: 50px;
+    
+}
+nav ul{
+ display: flex;
+    gap: 2em;
+    position: relative;
+    list-style: none;
+    right: 30px;
+    top: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+        .container {
+            max-width: 1100px; 
+            margin: 0 auto;
+            padding: 60px 20px;
+            flex: 1;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 60px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .page-title::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #000;
+            margin: 15px auto 0 auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto 60px auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            border-left: 0px; 
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .text-header {
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            text-align: justify; 
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 0px;
+            margin-bottom: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        li strong {
+            color: #000;
+            font-weight: bold;
+        }
+
+
+        .symbolism-section {
+            margin-top: 80px;
+        }
+
+        .symbolism-title {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-align: left; 
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #f7f7f7; 
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 4px;
+            transition: transform 0.2s;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            text-align: center; 
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 900px) {
+            .cards-grid {
+                grid-template-columns: 1fr 1fr; 
+            }
+        }
+        @media (max-width: 600px) {
+            .cards-grid {
+                grid-template-columns: 1fr; 
+            }
+            header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    .endbox{
+    background-color: black;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+.endbox a{
+    color: white;
+    text-decoration: none;
+    margin: 60px;
+    position: relative;
+    top: 30px;
+}
+#endtext1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#endtext2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: -12px;
+}
+.endtextcontainer{
+    position: relative;
+    top: 80px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.page2{
+    display: flex;
+    justify-content: center;
+}
+#sideline{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    left: 180px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+#h4{
+    position: relative;
+    left: 205px;
+    top: 10px;
+}
+@media (max-width: 1024px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    nav h1 {
+        margin: 0;
+        right: 0;
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 1.2em;
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    nav h1 {
+        margin: 0;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+        right: 0;
+    }
+}
+@media (max-width: 1024px) {
+    .endbox {
+        height: auto;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .endbox a {
+        margin: 20px;
+        display: inline-block;
+        top: 0;
+    }
+
+    .endtextcontainer {
+        top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .endbox {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .endbox a {
+        margin: 10px 0;
+        display: block;
+    }
+
+    #endtext1,
+    #endtext2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .endtextcontainer {
+        top: 20px;
+    }
+}

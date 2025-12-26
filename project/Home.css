@@ -1,0 +1,339 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+nav{
+    background-color: black;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav h1{
+    margin:150px;
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+    right: 50px;
+}
+nav ul{
+    display: flex;
+    gap: 2em;
+    position: relative;
+    list-style: none;
+    right: 30px;
+    
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#box1 {
+    background-image: url('./assets/background.png');
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 600px;
+    position: relative;
+    width: 1200px;
+}
+
+
+#title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 90px;
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#para{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 220px;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#box2{
+    width: 230px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 230px;
+
+}
+.box2container{
+    display: flex;
+    justify-content: center;
+    
+}
+#boxtext{
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+#heading2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#boxes{
+    position: relative;
+    height: 200px;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+    gap: 40px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.info-box {
+    width: 100%;
+    height: 450px;
+    background: #f3f3f3;
+    border-radius: 8px;
+}
+#infotext{
+     position: relative;
+     top: 20px;
+     left: 30px;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 1.07em;
+}
+.imgcontainer{
+    display: flex;
+    justify-content: center;
+    
+}
+#blackbox{
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.endbox{
+    background-color: black;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+.endbox a{
+    color: white;
+    text-decoration: none;
+    margin: 60px;
+    position: relative;
+    top: 30px;
+}
+#endtext1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#endtext2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: -12px;
+}
+.endtextcontainer{
+    position: relative;
+    top: 80px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.page2{
+    display: flex;
+    justify-content: center;
+}
+#sideline{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    left: 180px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+#h4{
+    position: relative;
+    left: 205px;
+    top: 10px;
+}
+@media (max-width: 1024px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    nav h1 {
+        margin: 0;
+        right: 0;
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 1.2em;
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    nav h1 {
+        margin: 0;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+        right: 0;
+    }
+}
+@media (max-width: 1024px) {
+    .endbox {
+        height: auto;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .endbox a {
+        margin: 20px;
+        display: inline-block;
+        top: 0;
+    }
+
+    .endtextcontainer {
+        top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .endbox {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .endbox a {
+        margin: 10px 0;
+        display: block;
+    }
+
+    #endtext1,
+    #endtext2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .endtextcontainer {
+        top: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-box .imgcontainer img {
+        width: 100% !important;
+        height: auto;
+    }
+    
+    #heading2 h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .box2container #boxtext {
+        text-align: center;
+    }
+    
+    #box2 {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    header nav {
+        flex-direction: column;
+    }
+    
+    .endbox a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
